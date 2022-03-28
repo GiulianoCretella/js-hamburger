@@ -7,9 +7,16 @@ console.log(burgerIcon);
 let escIcon = document.querySelector('.hamburger-menu > a');
 
 burgerIcon.addEventListener('click', function(){
-    menu.style.display = 'block';
+    menu.classList.add('active');
 });
 
 escIcon.addEventListener('click', function(){
-    menu.style.display = 'none';
+    menu.classList.remove('active');
 });
+
+// function toggleMenu(){
+//     menu.classList.toggle('active');
+// };
+
+// burgerIcon.addEventListener('click', toggleMenu);
+// escIcon.addEventListener('click', toggleMenu);
